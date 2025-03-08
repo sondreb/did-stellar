@@ -24,6 +24,9 @@
     "url": "https://github.com/sondreb/did-stellar"
   },
   "dependencies": {
-    "base32.js": "^0.1.0"
+    "@noble/curves": "^1.8.1",
+    "@noble/ed25519": "^2.2.3",
+    "base32.js": "^0.1.0",
+    "multibase": "^4.0.6"
   }
 }

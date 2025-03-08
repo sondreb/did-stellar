@@ -5,10 +5,11 @@ export function runStrKeyTests() {
   const runner = new TestRunner();
   console.log('\n🧪 Running StrKey Tests...');
 
-  // Test constants for each key type
-  // Note: These are examples and might need to be replaced with actual valid keys
-  const publicKeyRaw = new Uint8Array(32).fill(1); // Example public key data
-  const secretSeedRaw = new Uint8Array(32).fill(2); // Example secret seed data
+  const publicKeyText = 'GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB';
+  const privateKeyText = 'SAV76USXIJOBMEQXPANUOQM6F5LIOTLPDIDVRJBFFE2MDJXG24TAPUU7';
+
+  const publicKeyRaw = StrKey.decodeEd25519PublicKey(publicKeyText);
+  const secretSeedRaw = StrKey.decodeEd25519SecretSeed(privateKeyText);
 
   runner.test('StrKey.encodeEd25519PublicKey should encode correctly', () => {
     const encoded = StrKey.encodeEd25519PublicKey(publicKeyRaw);
