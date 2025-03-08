@@ -46,7 +46,7 @@ export function runDidStellarTests() {
     const did = 'did:stellar:GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB';
     const document = DidStellar.resolve(did);
 
-    runner.assertEquals(document.id, did, 'DID document should contain the DID');
+    runner.assertEquals(document.didDocument.id, did, 'DID document should contain the DID');
   });
 
   runner.test('DidStellar.fromPublicKey should create a valid DID document', () => {
