@@ -147,9 +147,6 @@ Utility class for handling Stellar key formats. See full documentation in the [c
   ],
   "capabilityInvocation": [
     "did:stellar:GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB#0"
-  ],
-  "keyAgreement": [
-    "did:stellar:GCFXHS4GXL6BVUCXBWXGTITROWLVYXQKQLF4YH5O5JT3YZXCYPAFBJZB#0"
   ]
 }
 ```
